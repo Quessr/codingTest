@@ -1,0 +1,15 @@
+{
+  "name": "codingTest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:seraheo/codingTest.git",
+  "author": "seraheo <heosera76@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha --recursive ./**/*.spec.js",
+    "test:watch": "yarn test --watch"
+  },
+  "dependencies": {
+    "mocha": "^10.1.0"
+  }
+}

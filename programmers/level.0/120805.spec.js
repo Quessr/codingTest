@@ -13,7 +13,19 @@
  * Math.floor: 내림
  * Math.ceil: 올림
  */
+const assert = require("assert");
+
 function solution(num1, num2) {
   var answer = Math.trunc(num1 / num2);
   return answer;
 }
+
+describe("몫 구하기", () => {
+  it("case 1", () => {
+    assert.equal(solution(10, 5), 2);
+  });
+
+  it("case 2", () => {
+    assert.equal(solution(7, 2), 3);
+  });
+});
