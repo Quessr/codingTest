@@ -7,6 +7,19 @@ function solution(my_string) {
   // join
   const collection = ['a', 'e', 'i', 'o', 'u']
   return my_string.split('').filter(x => !collection.includes(x)).join('')
+
+    // * 다른방법 1.
+    // var answer = my_string.replaceAll(new RegExp("[aeiou]", "g"), "");
+    // return answer;
+    
+    // * 다른방법 2.
+  // var answer = my_string
+  //               .replaceAll("a", "")
+  //               .replaceAll("e", "")
+  //               .replaceAll("i", "")
+  //               .replaceAll("o", "")
+  //               .replaceAll("u", "")
+  // return answer;
 }
 
 describe("모음 제거", () => {
