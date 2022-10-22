@@ -5,9 +5,9 @@ const assert = require("assert");
  */
 function solution(price) {
   if (price < 100000) return price
-  if (price < 300000 ) return 0.95 * price
-  if (price < 500000 ) return 0.9 * price
-  return 0.8 * price;
+  if (price < 300000 ) return parseInt(0.95 * price)
+  if (price < 500000 ) return parseInt(0.9 * price)
+  return parseInt(0.8 * price);
 }
 
 describe("옷가게 할인 받기", () => {
