@@ -12,6 +12,14 @@ function solution(my_string) {
     }
   }
   return answer;
+
+  // * 다른풀이
+  // var answer = my_string.split("").reduce((acc, curr) => {
+  //   const convert = parseInt(curr);
+  //   if (Number.isInteger(convert)) acc += convert;
+  //   return acc;
+  // }, 0);
+  // return answer;
 }
 
 describe("숨어있는 숫자의 덧셈 (1)", () => {
