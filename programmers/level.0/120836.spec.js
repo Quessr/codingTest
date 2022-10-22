@@ -2,13 +2,13 @@
 const assert = require("assert");
 
 function solution(n) {
-  var answer = [];
+  var answer = 0;
   for (let i = 0; i <= n; i++) {
     if (n % i === 0) {
-      answer.push(i)
+      answer = answer + 1
     }
   }
-  return answer.length;
+  return answer;
 }
 
 describe("순서쌍의 개수", () => {
