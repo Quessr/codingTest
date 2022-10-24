@@ -1,4 +1,4 @@
-// 문제: 한 번만 등장한 문자
+// 문제: 한 번만 등장한 문자 ❌
 const assert = require("assert");
 
 function solution(s) {
