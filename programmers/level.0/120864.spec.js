@@ -9,6 +9,12 @@ function solution(my_string) {
   return answer;
 }
 
+// * 다른풀이
+// function solution(my_string) {
+//   const answer = my_string.split(/\D+/).map(Number).reduce((acc, curr) => acc + curr, 0);
+//   return answer;
+// }
+
 describe("숨어있는 숫자의 덧셈 (2)", () => {
   it("case 1", () => {
     assert.deepEqual(solution("aAb1B2cC34oOp"), 37);
