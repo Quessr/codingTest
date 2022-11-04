@@ -1,19 +1,26 @@
-// 문제: 점의 위치 구하기
+// 문제: 문자열 계산하기 ❌
 const assert = require("assert");
 
-function solution(dot) {
-  if (dot[0] > 0 && dot[1] > 0) return 1
-  if (dot[0] < 0 && dot[1] > 0) return 2
-  if (dot[0] < 0 && dot[1] < 0) return 3
-  return 4;
+function solution(my_string) {
+  const arr = my_string.split(" ");
+  while (arr.length > 1) {
+    const [a, op, b] = arr.splice(0, 3);
+    if (op === '+') {
+      arr.unshift(Number(a) + Number(b));
+    } else if (op === '-') {
+      arr.unshift(Number(a) - Number(b))
+    }
+  }
+  return arr[0];
 }
 
-describe("점의 위치 구하기", () => {
+// function solution(my_string) {
+//   return eval(my_string)
+// }
+
+describe("문자열 계산하기", () => {
   it("case 1", () => {
-    assert.equal(solution([2, 4]), 1);
+    assert.equal(solution("6 - 4"), 2);
   });
 
-  it("case 2", () => {
-    assert.equal(solution([-7, 9]), 2);
-  });
 });
