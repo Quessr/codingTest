@@ -1,4 +1,4 @@
-// 문제: 컨트롤 제트
+// 문제: 컨트롤 제트 ❌
 const assert = require("assert");
 
 // i = 0;
